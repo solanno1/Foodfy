@@ -117,11 +117,12 @@ header .title .logo{
     text-decoration: none;
 }
 
-.card a h3{
+.card h3{
     font-family: var(--font-regular);
     font-weight: normal !important;
     font-size: 18px;
     color: #111111;
+    cursor: pointer;
     text-decoration: none !important;
 }
 
@@ -172,3 +173,80 @@ footer p{
 }
 
 /* MODAL */
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{    
+    width: 30%;
+    height: 45%;
+    margin: 5vh auto;
+    position: absolute;    
+    top: 45%;
+    left: 45%;
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin-left: -150px;
+    margin-top: -150px;
+} 
+
+.modal .close-modal{
+    color: black;
+    position: absolute;
+    display: flex;
+    padding-left: 240px;
+    bottom: 8px;
+    cursor: pointer;
+    font-family: var(--font-regular);
+    font-size: 16px;
+    color: #999999;
+}
+
+.modal .close-modal:hover{
+    color: #7F7E7E;
+    font-weight: bold;
+}
+
+
+/* MODAL.ACTIVE */
+.modal-overlay.active{
+    opacity: 1;    
+    visibility: visible;
+}
+
+ .modal-content img{
+    border-radius: 15px;
+    display: flex;
+    width: 95%;
+    height: 45%;    
+    margin-left: 17px;
+    position: absolute;
+    top: 5%;
+}
+
+.modal-content h3{
+    font-family: var(--font-regular);
+    font-weight: normal !important;
+    font-size: 18px;
+    color: #111111;
+    text-decoration: none !important;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 220px;
+}
+
+.modal-content p{
+    font-family: var(--font-regular);    
+    font-size: 16px;
+    color: #777777;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
