@@ -9,9 +9,7 @@ for(let card of menu){
         modalOverlay.classList.add('active')
         modalOverlay.querySelector('img').src = `/assets/${imgId}`
         modalOverlay.querySelector('h3').innerText = `${text}`
-        modalOverlay.querySelector('.text').innerText =`${author}`
-
-        
+        modalOverlay.querySelector('.text').innerText =`${author}`        
     })
 }
 
