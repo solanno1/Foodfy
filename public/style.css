@@ -14,6 +14,7 @@ body{
     margin: 0 !important;    
     padding: 0 !important;
     position: relative;
+    min-height: 100vh;
 }
 
 /* header{
@@ -43,6 +44,11 @@ header .nav-title{
 
 header .title .logo{
     margin-right: 200px;
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
 }
 
 .content .banner{
@@ -108,7 +114,8 @@ header .title .logo{
 
 .card img{    
     max-width: 300px;
-    max-height: 260px;
+    height: 140px;
+    object-fit: cover;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -136,9 +143,9 @@ footer{
     position: absolute;
     width: 100%;
     height: 55px;
-    background: #EEEEEE;
-    padding-bottom: 0;
-    margin-bottom: 0;    
+    background: #EEEEEE;    
+    bottom: 0;
+    
 }
 
 footer p{    
@@ -250,3 +257,111 @@ footer p{
     text-align: center;
     justify-content: center;
 }
+
+/* ERROR 404 */
+
+#main{
+    transition: all 0.6s;
+    display: table;
+    width: 100%;
+    height: 87.5%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #888;
+    margin: 0;
+}
+
+.error{
+	  display: table-cell;
+	  vertical-align: middle;
+}
+
+.error h1{
+	  font-size: 50px;
+	  display: inline-block;
+	  padding-right: 12px;
+	  animation: type .5s alternate infinite;
+}
+
+@keyframes type{
+	  from{box-shadow: inset -3px 0px 0px #888;}
+	  to{box-shadow: inset -3px 0px 0px transparent;}
+}
+
+/* RECIPES */
+
+.content .recipes{
+    height: 360px;
+    max-width: 940px;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: flex;
+    object-fit: cover;
+}
+
+.recipes img{
+    display: flex;    
+    height: 300px;
+    border-radius: 15px;
+    width: 100%;
+    margin: 60 auto
+}
+
+.title h1{
+    display: flex;
+    justify-content: center;
+}
+
+.title p{
+    display: flex;
+    justify-content: center;
+}
+
+.toggle{
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hide-ingredientes{
+    font-family: Roboto-Bold;
+    font-size: 12px;
+    color: #999999;
+    text-decoration: none;
+    cursor: pointer;
+    bottom: 10;
+    position: absolute;
+    left: 140;
+}
+
+.hide-preparo{
+    font-family: Roboto-Bold;
+    font-size: 12px;
+    color: #999999;
+    text-decoration: none;
+    cursor: pointer;
+    bottom: 10;
+    position: absolute;
+    left: 185;
+}
+
+.hide-info{
+    font-family: Roboto-Bold;
+    font-size: 12px;
+    color: #999999;
+    text-decoration: none;
+    cursor: pointer;
+    bottom: 10;
+    position: absolute;
+    left: 255;
+}
+
+.ingredientes,
+.preparo,
+.info{
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
+}
+

@@ -1,18 +1,7 @@
-const modalOverlay = document.querySelector('.modal-overlay');
-const menu = document.querySelectorAll('.card');
-
-for(let card of menu){
+const cards = document.querySelectorAll('.card')
+for(let card of cards){
     card.addEventListener("click", function(){
-        const imgId = card.getAttribute("id")
-        const text = card.querySelector("h3").innerText
-        const author = card.querySelector(".text").innerText
-        modalOverlay.classList.add('active')
-        modalOverlay.querySelector('img').src = `/assets/${imgId}`
-        modalOverlay.querySelector('h3').innerText = `${text}`
-        modalOverlay.querySelector('.text').innerText =`${author}`        
+        const recipeId = card.getAttribute('id')
+        window.location.href = `/recipes/${recipeId}`
     })
 }
-
-document.querySelector('.close-modal').addEventListener("click", function(){
-    modalOverlay.classList.remove('active');
-})
