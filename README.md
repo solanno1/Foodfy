@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="assets/logolaunchbase.png">
+    <img src="/public/assets/logolaunchbase.png">
 </h1>
 
 <h1 align="center">
@@ -9,7 +9,7 @@
 </h1>
 
 <h1 align="center">
-    <img src="assets/logo.jpg">
+    <img src="/public/assets/logo.jpg">
 </h1>
 
 ## Indice
@@ -29,7 +29,7 @@
 - Foi entregue o layout de um site, o Foodfy, da seguinte forma:
 
 
-<img src="assets/imgdesafio.jpg" width="550px">
+<img src="/public/assets/imgdesafio.jpg" width="550px">
 
 
 - A partir desse layout nosso trabalho era criar o site do zero, mantendo o design do layout, criando a página "Sobre", a página "Receitas" e o modal que abre na página "Receitas" quando o usuário clica em alguma receita, ampliando-a.
