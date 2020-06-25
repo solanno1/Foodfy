@@ -105,8 +105,12 @@ header .title .logo{
     margin: 0 auto;
 }
 
+.h2-cardapio{
+    margin: 0 auto;
+    position: relative;
+    max-width: 940px;
+}
 .h2-cardapio h2{
-    margin-left: 490px;
     font-family: var(--font-regular);    
     font-size: 24px;
     color: #111111;
@@ -140,7 +144,7 @@ header .title .logo{
 }
 
 footer{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 55px;
     background: #EEEEEE;    
@@ -153,7 +157,7 @@ footer p{
     font-size: 14px;
     color: #999999;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 20px;
 }
 
 
@@ -365,3 +369,8 @@ footer p{
     margin: 0 auto;
 }
 
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}

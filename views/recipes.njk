@@ -13,10 +13,10 @@
 
     <div class="toggle">
         <h2>Ingredientes</h2>
-        <p class="hide-ingredientes">ESCONDER</p>
+        <p class="card-hide hide-ingredientes" id="0">ESCONDER</p>
     </div>
 
-    <div class="ingredientes">
+    <div class="card-text ingredientes">
         <ul>
             {%for ingredient in items.ingredients%}
             <li>{{ingredient}}</li>
@@ -26,9 +26,9 @@
 
     <div class="toggle">
         <h2>Modo de preparo</h2>
-        <p class="hide-preparo">ESCONDER</p>
+        <p class="card-hide hide-preparo" id="1">ESCONDER</p>
     </div>
-    <div class="preparo">
+    <div class="card-text preparo">
         <ol>
             {%for prepare in items.preparation%}
             <li>{{prepare}}</li>
@@ -38,11 +38,12 @@
 
     <div class="toggle">
         <h2>Informações adicionais</h2>
-        <p class="hide-info">ESCONDER</p>
+        <p class="card-hide hide-info" id="2">ESCONDER</p>
     </div>
-    <div class="info">
-        <p class="test">
+    <div class="card-text info">
+        <p>
             {{items.information}}
         </p>
     </div>
+    <script src="/script.js"></script>
 {% endblock %}
