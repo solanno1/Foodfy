@@ -12,14 +12,6 @@
     <img src="/public/assets/logo.jpg">
 </h1>
 
-## Indice
-- [Sobre o desafio parte 1](#-sobre-o-desafio-parte-1)
-- [Do que se constitnuia o desafio](#-Do-que-se-constitnuia-o-desafio)
-- [Tecnologias utilizadas na primeira parte](#-Tecnologias-utilizadas-na-primeira-parte)
-- [Sobre o desafio parte 2](#Sobre-o-desafio-parte-2)
-- [Do que se constituia o desafio na parte 2](#-Do-que-se-constituia-o-desafio-na-parte-2)
-- [Tecnologias utilizadas na segunda parte](#-Tecnologias-utilizadas-na-segunda-parte)
-
 ## Sobre o desafio parte 1:
 
 - O site Foodfy é resultado de um desafio presente no Bootcamp LaunchBase da Rocketseat como conclusão do módulo "Iniciando no Front-end". Trata-se de um site onde o usuário pode encontrar diversas receitas criadas por vários chefs.
