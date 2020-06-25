@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="imgreadme/logolaunchbase.png">
+    <img src="assets/logolaunchbase.png">
 </h1>
 
 <h1 align="center">
@@ -9,7 +9,7 @@
 </h1>
 
 <h1 align="center">
-    <img src="imgreadme/logo.jpg">
+    <img src="assets/logo.jpg">
 </h1>
 
 ## Indice
@@ -29,7 +29,7 @@
 - Foi entregue o layout de um site, o Foodfy, da seguinte forma:
 
 
-<img src="imgreadme/imgdesafio.jpg" width="550px">
+<img src="assets/imgdesafio.jpg" width="550px">
 
 
 - A partir desse layout nosso trabalho era criar o site do zero, mantendo o design do layout, criando a página "Sobre", a página "Receitas" e o modal que abre na página "Receitas" quando o usuário clica em alguma receita, ampliando-a.
@@ -41,12 +41,6 @@
 - 🚀 HTML
 - 🚀 CSS
 - 🚀 JavaScript
-
----
-
-<h1 align="center">
-<img src="imgreadme/gif.gif" width="400px">
-</h1>
 
 
 ## Sobre o desafio parte 2:
@@ -63,10 +57,5 @@
 - 🚀 Express
 - 🚀 Nunjucks
 
----
-
-<h1 align="center">
-    <img src="imgreadme/gifrefatorado.gif">
-</h1>
 
 Desenvolvido por © Solano Oliveira
