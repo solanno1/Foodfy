@@ -1,0 +1,51 @@
+{%extends "layout.njk"%}}
+
+{%block head%}
+    <title>Foodfy - Criar receita</title>
+    {%endblock%}
+
+    {%block content%}
+        <form method="POST" action="/receitas">
+            <div class="sub-header">
+                <h2>Criando receita</h2>
+                <button type="submit">Salvar receita</button>
+            </div>
+            <div class="item">
+                <div class="title">Imagem da receita</div>
+                <div>
+                    <input type="url" name="image">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">Ingredientes</div>
+                <div id="ingredients">
+                    <div class="ingredient">
+                        <input type="text" name="ingredients[]">
+                    </div>
+                </div>
+                <div>
+                    <a class="add-ingredient">Adicionar novo ingrediente</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">Modo de preparo</div>
+                <div id="steps">
+                    <div class="prepare">
+                        <input type="text" name="preparation[]">
+                    </div>
+                </div>
+                <div>
+                    <a class="add-prepare">Adicionar novo passo</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">Informações adicionais</div>
+                <div>
+                    <textarea name="information"></textarea>
+                </div>
+            </div>
+        </form>
+        {%endblock%}
