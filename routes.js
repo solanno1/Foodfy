@@ -3,9 +3,6 @@ const routes = express.Router()
 const users = require("./controllers/users")
 const recipes = require("./controllers/admin")
 
-routes.get('/', function(req, res){
-    return res.redirect("/receitas")
-})
 
 routes.get("/", users.index)
 routes.get("/receitas", users.receita)
