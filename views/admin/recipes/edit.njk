@@ -1,0 +1,58 @@
+{%extends "layout.njk"%}}
+
+{%block head%}
+    <title>Foodfy - Editar receita</title>
+    {%endblock%}
+
+    {%block content%}
+        <form method="POST" action="../recipes?_method=PUT">
+            <div class="sub-header">
+                <h2>Receita</h2>
+                <button type="submit">Editar receita</button>
+                <button type="submit">Deletar receita</button>
+            </div>
+            <div class="item">
+                <div class="title">Imagem da receita</div>
+                <div>
+                    <input type="url" name="image" value="{{items.image}}">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="title">Ingredientes</div>
+                <div id="ingredients">
+                    {%for ingredient in items.ingredients%}
+                        <div class="ingredient">
+                            <input type="text" name="ingredients[]" value="{{ingredient}}">
+                        </div>
+                        {%endfor%}
+
+                    </div>
+                    <div>
+                        <a class="add-ingredient">Adicionar novo ingrediente</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="title">Modo de preparo</div>
+                    <div id="steps">
+                    {%for prepare in items.preparation%}
+                        <div class="prepare">
+                            <input type="text" name="preparation[]" value="{{prepare}}">
+                        </div>
+                        {%endfor%}
+                    </div>
+                    <div>
+                        <a class="add-prepare">Adicionar novo passo</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="title">Informações adicionais</div>
+                    <div>
+                        <textarea name="information">{{items.information}}</textarea>
+                    </div>
+                </div>
+                <input type="hidden" name="id" value="{{items.id}}">
+            </form>
+            {%endblock%}

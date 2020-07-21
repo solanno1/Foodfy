@@ -45,7 +45,10 @@ function addIngredient() {
     newField.children[0].value = "";
     ingredients.appendChild(newField);
   }
-  document.querySelector(".add-ingredient").addEventListener("click", addIngredient);
+  let checkClassAddIngredient = document.querySelector(".add-ingredient")
+  if(checkClassAddIngredient){
+      document.querySelector(".add-ingredient").addEventListener("click", addIngredient);
+  }
 
 
   function addPrepare() {
@@ -60,4 +63,7 @@ function addIngredient() {
     ingredients.appendChild(newField);
   }
   
-  document.querySelector(".add-prepare").addEventListener("click", addPrepare);
+  let checkClassAddPrepare = document.querySelector(".add-prepare")
+  if(checkClassAddPrepare) {
+      document.querySelector(".add-prepare").addEventListener("click", addPrepare);
+  }
