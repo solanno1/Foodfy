@@ -137,7 +137,28 @@
         "Despeje em assadeira retangular média, untada e leve ao forno médio (180°C), por aproximadamente 45 minutos. Depois de frio, polvilhe, com o",
         "açúcar de confeiteiro e corte em quadrados."
       ],
-      "information": ""
-    }    
+      "information": "teste"
+    },
+    {
+      "id": 7,
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1335&q=80",
+      "title": "Salada verde",
+      "author": "Solano Oliveira",
+      "ingredients": [
+        "Tomate",
+        "Alface",
+        "Ovo",
+        "Cebola"
+      ],
+      "preparation": [
+        "Pique o tomate em rodelas",
+        "Lave o alface com água morna",
+        "Cozinhe o ovo por 8 minutos",
+        "Pique a cebola em cubos",
+        "Misture tudo",
+        "Sal a gosto"
+      ],
+      "information": "Salada preparada com muito amor e carinho pelo autor que não gosta de saladas"
+    }
   ]
 }

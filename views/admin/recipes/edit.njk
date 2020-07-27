@@ -5,11 +5,12 @@
     {%endblock%}
 
     {%block content%}
-        <form method="POST" action="../recipes?_method=PUT">
+        <form method="POST" action="/admin/recipes?_method=PUT">
             <div class="sub-header">
                 <h2>Receita</h2>
-                <button type="submit">Editar receita</button>
-                <button type="submit">Deletar receita</button>
+                <div>
+                    <button type="submit">Editar receita</button>
+                </div>
             </div>
             <div class="item">
                 <div class="title">Imagem da receita</div>
@@ -36,23 +37,28 @@
                 <div class="item">
                     <div class="title">Modo de preparo</div>
                     <div id="steps">
-                    {%for prepare in items.preparation%}
-                        <div class="prepare">
-                            <input type="text" name="preparation[]" value="{{prepare}}">
+                        {%for prepare in items.preparation%}
+                            <div class="prepare">
+                                <input type="text" name="preparation[]" value="{{prepare}}">
+                            </div>
+                            {%endfor%}
                         </div>
-                        {%endfor%}
+                        <div>
+                            <a class="add-prepare">Adicionar novo passo</a>
+                        </div>
                     </div>
-                    <div>
-                        <a class="add-prepare">Adicionar novo passo</a>
-                    </div>
-                </div>
 
-                <div class="item">
-                    <div class="title">Informações adicionais</div>
-                    <div>
-                        <textarea name="information">{{items.information}}</textarea>
+                    <div class="item">
+                        <div class="title">Informações adicionais</div>
+                        <div>
+                            <textarea name="information">{{items.information}}</textarea>
+                        </div>
                     </div>
-                </div>
-                <input type="hidden" name="id" value="{{items.id}}">
-            </form>
-            {%endblock%}
+                    <input type="hidden" name="id" value="{{items.id}}">
+                </form>
+                <form action="/admin/recipes?_method=DELETE" method="POST" id="form-delete">
+                    <button type="submit" class="btnDelet">Deletar receita</button>
+                    <input type="hidden" name="id" value="{{items.id}}">
+                </form>
+                {%include "../confirm.njk"%}
+                {%endblock%}

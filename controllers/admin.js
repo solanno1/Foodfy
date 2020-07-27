@@ -65,3 +65,44 @@ exports.edit = function(req, res){
     }
     return res.render("admin/recipes/edit", {items: recipe})
 }
+
+exports.put = function(req, res){
+    const {id} = req.body
+    let index = 0
+    const foundRecipe = data.recipes.find(function(recipe, foundIndex){
+        if(id == recipe.id){
+            index = foundIndex
+            return true
+        }
+    })
+
+    if(!foundRecipe) return res.render("Recipe not found")
+
+    const recipe = {
+        ...foundRecipe,
+        ...req.body,
+        id: Number(req.body.id)
+    }
+
+    data.recipes[index] = recipe
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
+        if(err) return res.send("File write error")
+
+        return res.redirect(`/admin/recipes/${id}`)
+    })
+}
+
+exports.delete = function(req, res){
+    const {id} = req.body
+    const filteredItems = data.recipes.filter(function(recipe){
+        return recipe.id != id
+    })
+
+    data.recipes = filteredItems
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
+        if(err) res.render("File write error!")
+        return res.redirect("/admin/recipes")
+    })
+}
